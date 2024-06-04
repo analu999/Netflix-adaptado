@@ -1,48 +1,75 @@
+
+
+
 <html lang="pt-BR">
-    <head>
-        <title>Netflix [Clone]</title>
-        <link rel="stylesheet" type="text/css" href="./styles.css">
-    </head>
-    <body>
-        <!-- flex ; column -->
-        <div class="container">
-            <!-- nav, ul -->
-            <div class="menu">
-                <ul>
-                    <!-- <a aria-label="Ir para sobre" href="#sobre">Sobre</a> -->
-                    <li>Sobre</li>
-                    <li>Trailer</li>
-                    <li>
-                        <img alt="Netflix" src="./imgs/netflix-logo.png">
-                    </li>
-                    <li>Atores</li>
-                    <li>Avaliações</li>                
-                </ul>                
-            </div>
-
-            <div class="row ph-30 gap-150 pt-50">
-                <div class="info_serie">
-                    <h4 class="titulo">Supernatural</h4>
-                    <h6 class="genero m-t-14 m-b-28">Drama, Mistério, Terror</h6>
-                    <span class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id lectus id mauris porttitor rutrum sit amet vel augue. Nam varius efficitur sem eu varius. Donec ut diam est. Proin venenatis sodales lorem fermentum tempus. Nulla lobortis suscipit neque. Ler mais.</span>
-    
-                    <div class="row m-t-56">
-                        <span>1ª Temporada</span>
-                        <img src="./imgs/chevron-left.png">
-                        <img src="./imgs/chevron-right.png">
-                    </div>
-    
-                    <div class="episodios">
-                        <div class="card-episodio"></div>
-                    </div>
-                </div>
-    
-                <img class="poster" src="./imgs/poster.png">
-                    
-            </div>
-
-
-            <div class="social"></div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix [Clone]</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#">Trailer</a></li>
+                <li><img alt="Netflix" src="./imgs/netflix-logo.png"></li>
+                <li><a href="#">Atores</a></li>
+                <li><a href="#">Avaliações</a></li>
+            </ul>
+            <nav id="navbar">
+                <img src="./imgs/passaro.png" alt="Logo" class="menu-logo">
+            </nav>
+            <article class="card-episodio">
+                <h3>Deus é contigo</h3>
+                <p>Eu sou amor.</p>
+                <a href="#" class="button">Add to Cart</a>
+              </article>
         </div>
-    </body>
+
+       
+
+        <div class="content">
+            <div class="info_serie">
+                <h4 class="titulo">Supernatural</h4>
+                <h6 class="genero">Drama, Mistério, Terror</h6>
+                <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id lectus id mauris porttitor rutrum sit amet vel augue. Nam varius efficitur sem eu varius. Donec ut diam est. Proin venenatis sodales lorem fermentum tempus. Nulla lobortis suscipit neque. Ler mais.</p>
+
+                <div class="season">
+                    <span>1ª Temporada</span>
+                    <img src="./imgs/chevron-left.png">
+                    <img src="./imgs/chevron-right.png">
+                </div>
+
+                <div class="episodes">
+                    <div class="episode">
+                        <img src="./imgs/episode1-poster.png">
+                        <div class="episode-info">
+                            <h5>Episode 1</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="episode">
+                        <img src="./imgs/episode2-poster.png">
+                        <div class="episode-info">
+                            <h5>Episode 2</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <!-- Add more episodes here -->
+                </div>
+            </div>
+
+            <img class="poster" src="./imgs/poster.png">
+        </div>
+
+        <div class="social">
+            <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>

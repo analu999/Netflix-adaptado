@@ -5,102 +5,214 @@
     box-sizing: border-box;
 }
 
+/* .container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 100vh;
+    padding: 20px;
+} */
+
 .container {
     display: flex;
     flex-direction: column;
     background-color: black;
-    min-height: 100%;   
-    /* background-image: url('./imgs/poster.png');
-    background-repeat: cover; */
-    
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* .menu {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+
+.menu {
+    padding: 0 1rem;
+    color: white;
+    transition: color 0.2s;
+}
+
+
+.menu:hover {
+    color: #f0b90b;
 }
 
 .menu ul {
     display: flex;
-    flex-direction: row;    
-    list-style-type: none;
-    padding: 2em 25vw;
-    justify-content: space-between;
-    align-items: flex-end
-
-}
-
-ul li {
-    cursor: pointer;
-}
-
-.info_serie {
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-}
-
-.titulo {
-    font-size: 18px;
-}
-
-.genero {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;    
-}
-
-.episodios {
-    display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    height: 99px
 }
 
 .card-episodio {
-    width: 230px;
+    width: 100%;
     height: 135px;
     background-color: #E5E5E5;
     border-radius: 4px;
+    margin-bottom: 1rem;
 }
 
-.m-t-14 {
-    margin-top: 14px;
-}
+/* .poster {
+    width: 100%;
+    max-width: 392px;
+    margin-left: auto;
+    margin-right: auto;
+} */
 
-.m-t-20 {
-    margin-top: 20px;
-}
+  .poster {
+    width: 100%;
+    max-width: 600px; /* adjust the max-width of the poster image */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px; /* add a slight border radius */
+  }
 
-.m-b-28 {
-    margin-bottom: 28px;
-}
 
-.m-t-56 {
-    margin-top: 56px;
-}
 
-.poster {
-    width: 392px;
-}
-
-.ph-30 {
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-.gap-150 {
-    gap: 150px;
-}
-
-.pt-50 {
-    padding-top: 50px;
-}
 
 .social {
-    width: 30px;
+    width: 100%;
+    max-width: 30px;
     height: 160px;
     background-color: white;
-    position: absolute;
-    right: 30px;
-    top: 50%; 
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content
 }
+
+/* .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+} */
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #ccc;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.info_serie {
+    width: 40%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+
+.info-serie {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.info-serie .titulo {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-serie .genero {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.info-serie .descricao {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.info-serie .season {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.info-serie .season span {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.info-serie .season img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.genero {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.season {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.season span {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.episodes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .episode {
+    width: 30
+} */
+
+.episode img {
+    width: 150px; /* adjust the width of episode images */
+    height: 200px; /* adjust the height of episode images */
+    object-fit: cover; /* make the image fit the container */
+    border-radius: 4px; /* add a slight border radius */
+  }
